@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+/* header */
+.title {
+  width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+.scores {
+ display:flex;
+ justify-content: space-between;
+}
+.tally-box {
+  width: 20%;
+  text-align: center;
+  margin: 1% auto;
+  background-color: black;
+  color: white;
+  padding: 1%;
+}
+p {
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+}
+/* main game */
+.main {
+  width: 600px;
+  height: 600px;
+}
+.gameboard {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.block {
+  width: 30%;
+  height: 30%;
+  background-image: url(images/empty.png);
+  background-size: cover;
+}
+.character {
+  width: 30%;
+}
+/* footer(buttons) */
