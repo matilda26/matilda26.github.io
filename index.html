@@ -11,39 +11,39 @@
 <body>
 <header>
   <img class="title" src="images/tic-tac-toe.png" alt="title">
-  <div class="tally-box">
-    <p class="pOne-score">0</p>
-    <h2>scores</h2>
-    <p class="pTwo-score">0</p>
-  </div>
 </header>
 <div class="main">
   <div class="player-one">
-    <h1>player one</h1>
-    <img src="images/charOne2.png" alt="character" class="character">
+    <!-- <h1>player one</h1> -->
     <h2 class="one-status"></h2>
+    <div class="red-jump"></div>
+    <img src="images/charOne2.png" alt="character" class="character">
   </div><!-- end of player-one -->
-  <div class="gameboard">
-    <div class="block" id="1"></div>
-    <div class="block" id="2"></div>
-    <div class="block" id="3"></div>
-    <div class="block" id="4"></div>
-    <div class="block" id="5"></div>
-    <div class="block" id="6"></div>
-    <div class="block" id="7"></div>
-    <div class="block" id="8"></div>
-    <div class="block" id="9"></div>
-  </div><!-- end of gameboard -->
+  <div class="middle">
+    <div class="tally-box">
+      <p class="pOne-score">0</p>
+      <h2>scores</h2>
+      <p class="pTwo-score">0</p>
+    </div>
+    <div class="gameboard">
+      <div class="block" id="1"></div>
+      <div class="block" id="2"></div>
+      <div class="block" id="3"></div>
+      <div class="block" id="4"></div>
+      <div class="block" id="5"></div>
+      <div class="block" id="6"></div>
+      <div class="block" id="7"></div>
+      <div class="block" id="8"></div>
+      <div class="block" id="9"></div>
+    </div><!-- end of gameboard -->
+    <button class="reset">NEW GAME</button>
+  </div>
   <div class="player-two">
-    <img src="images/charTwo2.png" alt="character" class="character">
-    <h1>player two</h1>
+    <!-- <h1>player two</h1> -->
     <h2 class="two-status"></h2>
+    <img src="images/charTwo2.png" alt="character" class="character">
   </div><!-- end of player-two -->
 </div> <!-- end of main -->
-<footer>
-  <button class="reset">NEW GAME</button>
-  <button>CHANGE THEME</button>
-</footer>
   <script src="app.js"></script>
 </body>
 </html>
