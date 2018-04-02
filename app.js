@@ -4,7 +4,8 @@ var winnerStatus = document.querySelector('.status');
 var playerOneScore = document.querySelector('.pOne-score');
 var playerTwoScore = document.querySelector('.pTwo-score');
 var resetBtn = document.querySelector('.reset');
-var cheer = document.getElementById('winner-cheer');
+var redCheer = document.getElementById('red-cheer');
+var blueCheer = document.getElementById('blue-cheer');
 
 var playerOne = [];
 var playerTwo = [];
@@ -31,23 +32,23 @@ function containsWinning(player) {
     for (var i = 0; i < 3; i++) {
       if (player.includes(combo[i]) && player.includes(combo[i+1]) && player.includes(combo[i+2])) {
         if (turn % 2 !== 0) {
-          winnerStatus.textContent = 'PLAYER ONE WINS';
+          // winnerStatus.textContent = 'PLAYER ONE WINS';
           tally[0] += 1;
           playerOneScore.textContent = tally[0];
           document.getElementById(combo[i]).classList.add('winner');
           document.getElementById(combo[i+1]).classList.add('winner');
           document.getElementById(combo[i+2]).classList.add('winner');
           document.querySelector('.blue-jump').classList.add('jump-animate');
-          cheer.play();
+          blueCheer.play();
         } else {
-          winnerStatus.textContent = 'PLAYER TWO WINS';
+          // winnerStatus.textContent = 'PLAYER TWO WINS';
           tally[1] += 1;
           playerTwoScore.textContent = tally[1];
           document.getElementById(combo[i]).classList.add('winner');
           document.getElementById(combo[i+1]).classList.add('winner');
           document.getElementById(combo[i+2]).classList.add('winner');
           document.querySelector('.red-jump').classList.add('jump-animate');
-          cheer.play();
+          redCheer.play();
         }
       } else if (player.length > 4) {
         winnerStatus.textContent = "IT'S A DRAW";
@@ -67,8 +68,6 @@ var resetGame = function () {
   winnerStatus.textContent = '';
   document.querySelector('.blue-jump').classList.remove('jump-animate');
   document.querySelector('.red-jump').classList.remove('jump-animate');
-  cheer.pause();
-  cheer.currentTime = 0;
 }
 
 gameBlock.forEach(function(block) {
