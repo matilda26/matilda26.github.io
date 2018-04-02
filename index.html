@@ -9,41 +9,40 @@
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
 </head>
 <body>
-<header>
-  <img class="title" src="images/tic-tac-toe.png" alt="title">
-</header>
-<div class="main">
-  <div class="player-one">
-    <!-- <h1>player one</h1> -->
-    <h2 class="one-status"></h2>
-    <div class="red-jump"></div>
-    <img src="images/charOne2.png" alt="character" class="character">
-  </div><!-- end of player-one -->
-  <div class="middle">
-    <div class="tally-box">
-      <p class="pOne-score">0</p>
-      <h2>scores</h2>
-      <p class="pTwo-score">0</p>
+  <embed src="audio/Human-Music.mp3" type="audio/mpeg"  autostart="true" loop="true" hidden="true"></embed>
+  <audio id="winner-cheer" src="audio/yes_1.wav" preload="auto">
+  </audio>
+  <header>
+    <img class="title" src="images/tic-tac-toe.png" alt="title">
+  </header>
+  <div class="main">
+    <div class="player-one">
+      <div class="blue-jump"></div>
+    </div><!-- end of player-one -->
+    <div class="middle">
+      <div class="tally-box">
+        <p class="pOne-score">0</p>
+        <h2>scores</h2>
+        <p class="pTwo-score">0</p>
+      </div>
+      <div class="gameboard">
+        <div class="block" id="1"></div>
+        <div class="block" id="2"></div>
+        <div class="block" id="3"></div>
+        <div class="block" id="4"></div>
+        <div class="block" id="5"></div>
+        <div class="block" id="6"></div>
+        <div class="block" id="7"></div>
+        <div class="block" id="8"></div>
+        <div class="block" id="9"></div>
+      </div><!-- end of gameboard -->
+      <button class="reset">NEW GAME</button>
+      <h2 class="status"></h2>
     </div>
-    <div class="gameboard">
-      <div class="block" id="1"></div>
-      <div class="block" id="2"></div>
-      <div class="block" id="3"></div>
-      <div class="block" id="4"></div>
-      <div class="block" id="5"></div>
-      <div class="block" id="6"></div>
-      <div class="block" id="7"></div>
-      <div class="block" id="8"></div>
-      <div class="block" id="9"></div>
-    </div><!-- end of gameboard -->
-    <button class="reset">NEW GAME</button>
-  </div>
-  <div class="player-two">
-    <!-- <h1>player two</h1> -->
-    <h2 class="two-status"></h2>
-    <img src="images/charTwo2.png" alt="character" class="character">
-  </div><!-- end of player-two -->
-</div> <!-- end of main -->
+    <div class="player-two">
+      <div class="red-jump"></div>
+    </div><!-- end of player-two -->
+  </div> <!-- end of main -->
   <script src="app.js"></script>
 </body>
 </html>

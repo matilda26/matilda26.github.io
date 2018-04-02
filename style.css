@@ -21,7 +21,6 @@ body {
   background-color: black;
   color: white;
   padding: 2%;
-  /* vertical-align: middle; */
   display:flex;
   justify-content: space-between;
 }
@@ -29,19 +28,17 @@ p {
   font-size: 1em;
   margin: 0;
   padding: 0;
-  /* vertical-align: middle; */
 }
 h2 {
-  font-size: 1em;
-  margin: 0;
-  padding: 0;
+  font-size: 2em;
+  text-align: center;
 }
 /* main game */
 .main {
   width: 100%;
   height: 700px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .gameboard {
   width: 400px;
@@ -49,65 +46,33 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* align-items: center; */
   align-content: space-between;
-  /* background-color: black; */
   padding: 0;
   margin: 0 auto;
-  border: 1px solid black;
 }
-
 .block {
   width: 30%;
   height: 30%;
   background-image: url(images/empty.png);
   background-size: cover;
 }
+.blue-jump {
+  width: 400px;
+  height: 600px;
+  background-image: url(images/BlueWin.png);
+}
 .red-jump {
-  width: 802px;
-  height: 1002px;
-  background-image: url(images/spritesheetJump.png);
-  border: 2px solid black;
-}
-.jump-animate {
-  animation: jump 0.75s steps(20) infinite;
-}
-@keyframes jump {
-  100% {background-position: -16040px;}
-}
-
-
-
-
-.player-one > img {
-  float:right;
-  position: absolute;
-  bottom: 10%;
-  left: 10%;
+  width: 400px;
   height: 600px;
-  border: 1px solid black;
+  background-image: url(images/RedWin.png);
 }
-.player-two > img {
-  float: left;
-  position: absolute;
-  bottom: 10%;
-  right: 10%;
-  height: 600px;
-  border: 1px solid black;
-}
-.player-one, .player-two {
-  border: 1px solid black;
-  width:25%;
-  /* height: 600px; */
-}
-/* footer(buttons) */
 .middle {
   height: 700px;
 }
 .reset {
   width: 150px;
   height: 50px;
-  margin: 20% auto 0 auto;
+  margin: 5% auto 0 auto;
   display: block;
   background-color: black;
   color: white;
@@ -115,6 +80,13 @@ h2 {
 
 
 /* ANIMATIONS */
+.jump-animate {
+  animation: jump 1.5s steps(50) infinite;
+}
+@keyframes jump {
+  from {background-position: 0;}
+  to {background-position: -20000px;}
+}
 .winner {
   -webkit-animation: tada 1s;
   animation: tada 1s;
