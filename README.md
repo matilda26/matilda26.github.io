@@ -13,7 +13,7 @@ Finding the correct logic for the JS wasn't easy, however, in the end I put all 
 ## Next Steps
 - Make a responsive, phone version of the game
 - Add more animations:
-  - Sad losing aniamtion 
+  - Sad losing animation 
   - Draw animations
   - Waiting animations (waving, looking at clock)
 - Add customisation:
